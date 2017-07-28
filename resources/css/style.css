@@ -56,16 +56,47 @@ a {
   align-items: center;
   justify-content: flex-start;
 }
+
 .logo img {
   margin-left: 1.5rem;
   height: 3.5rem;
   width: auto;
 }
 
+.logo img.mobile {
+  display: none;
+}
+
 .flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media only screen and (max-width: 875px) {
+  header ul {
+    display: none;
+  }
+
+  header span {
+    display: none;
+  }
+
+  .logo.container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .logo img.mobile {
+    display: block;
+    height: 3rem;
+    width: auto;
+  }
+
+  .logo img .mobile {
+    display: block;
+  }
 }
 
 /*-- banner1 section --*/
@@ -103,6 +134,34 @@ a {
   text-align: center;
   padding: 0.5rem 0;
   margin: 1.5rem 0;
+}
+
+@media only screen and (max-width: 875px){
+  .banner1 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .banner1 .left {
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 11.25rem;
+    width: 100%;
+    padding: 0;
+  }
+
+  .banner1 .left img {
+    display: none;
+  }
+
+  .banner1 .right h1 {
+    margin: 2rem 0;
+  }
+
+  .banner1 .right .button {
+    margin-bottom: 2rem;
+  }
 }
 
 /*-- banner2 section --*/
@@ -179,6 +238,59 @@ h3 {
 .banner2 .read {
   color: hsl(200, 80%, 60%);
 }
+
+.banner2 .right .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 875px){
+
+  .banner2 .right {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background-color: white;
+    border-bottom: .125rem solid hsl(0, 0%, 85%);
+  }
+
+  .banner2 .left {
+    display: none;
+  }
+
+  .banner2 .right .info .mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 1rem 1rem 1rem 0;
+    margin: 0;
+  }
+
+  .banner2 .right .desktop {
+    display: none;
+  }
+
+  .banner2 .right .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 0;
+    background-color: white;
+    padding: 0 1rem;
+    width: 96%;
+  }
+
+  .banner2 .right .info div {
+    padding-left: 1rem;
+  }
+
+  .info {
+    width: 100%;
+    height: auto;
+  }
+}
+
 /*-- banner3 section --*/
 .features {
   background-color: hsl(0, 0%, 95%);
@@ -221,6 +333,38 @@ h3 {
 
 .feature p {
   margin: 0.5rem 1rem;
+}
+
+@media only screen and (max-width: 875px){
+
+  .features {
+    background-color: white;
+    border-bottom: .125rem solid hsl(0, 0%, 85%);
+  }
+
+  .banner3 {
+    padding: 0;
+  }
+
+  .feature {
+    height: auto;
+    padding: 0;
+    margin: .25rem 0;
+  }
+
+  .feature img {
+    display: none;
+  }
+
+  .feature p {
+    display: none;
+  }
+
+  .feature h2 {
+    padding: 1rem;
+    background-color: hsl(0, 0%, 85%);
+    margin: 0;
+  }
 }
 /*-- Thesis section --*/
 
@@ -292,6 +436,34 @@ video {
 .thesis p {
   margin: 0.5rem 0;
 }
+
+@media only screen and (max-width: 875px) {
+
+  .thesis .right {
+    display: none;
+  }
+
+  .thesis .left {
+    padding: 0 0 1.5rem 0;
+    width: 100%;
+  }
+
+  .thesis {
+    border: 0;
+  }
+
+  .thesis h1 {
+    padding: 2rem 0;
+  }
+
+  .thesis .left h2{
+    display: none;
+  }
+
+  .thesis .left p {
+    display: none;
+  }
+}
 /*-- footer section --*/
 
 footer {
@@ -304,4 +476,15 @@ footer {
 
 footer a {
   margin: 0.5rem;
+}
+
+@media only screen and (max-width: 875px) {
+  footer {
+    margin: 1rem 0 1rem 1rem;
+  }
+
+  footer a {
+    display: none;
+  }
+  }
 }
