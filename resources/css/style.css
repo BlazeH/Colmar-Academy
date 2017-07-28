@@ -27,11 +27,12 @@ header li {
   display: inline;
   margin: 0 0.5rem;
   color: hsl(0, 0%, 40%);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 h1 {
   font-weight: 900;
+  font-size: 2.5rem;
 }
 a {
   text-decoration: none;
@@ -92,6 +93,10 @@ a {
   width: 20rem;
 }
 
+.banner1 .right h1{
+  margin: 1rem 0;
+}
+
 .banner1 .right .button {
   color: white;
   background-color: hsl( 0, 0%, 30%);
@@ -116,6 +121,15 @@ a {
   width: 100%
 }
 
+.banner2 .left .quote {
+  font-size: 1.35rem;
+  margin-bottom: 2rem;
+}
+
+.banner2 .left .by {
+  font-weight: bold;
+}
+
 .banner2 .right {
   display: flex;
   flex-direction: column;
@@ -130,7 +144,6 @@ a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
   border-bottom: .125rem solid hsl(0, 0%, 85%);
 }
 
@@ -138,6 +151,10 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.banner2 .right .info p {
+  font-size: .95rem;
 }
 
 .banner2 .right .info img {
@@ -158,16 +175,22 @@ h3 {
 .banner2 p {
   margin: 0.5rem 0;
 }
+
+.banner2 .read {
+  color: hsl(200, 80%, 60%);
+}
 /*-- banner3 section --*/
 .features {
-  background-color: hsl(0, 0%, 85%);
+  background-color: hsl(0, 0%, 95%);
   padding-bottom: 2rem;
+  color: hsl(0, 0%, 50%);
 }
 
 .features h1 {
   text-align: center;
   padding: 2rem 0;
   margin: 0;
+  color: hsl(0, 0%, 30%);
 }
 
 .banner3 {
@@ -193,6 +216,7 @@ h3 {
 
 .feature h2 {
   margin: 0.5rem 1rem;
+  color: hsl(0, 0%, 30%);
 }
 
 .feature p {
@@ -201,19 +225,15 @@ h3 {
 /*-- Thesis section --*/
 
 .thesis {
-  background-color: hsl(0, 0%, 95%);
+  background-color: hsl(0, 0%, 98%);
   border-bottom: .125rem solid hsl(0, 0%, 85%);
+  color: hsl(0, 0%, 50%);
 }
 
 .thesis .body {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-}
-.thesis h1 {
-  padding: 2rem 0;
-  text-align: center;
-  margin: 0;
 }
 
 .thesis .left {
@@ -257,8 +277,16 @@ video {
   background-color: hsl(0, 0%, 85%);
 }
 
-h3 {
+.thesis h1,h2,h3 {
   margin: 0.5rem 0;
+  color: hsl(0, 0%, 30%);
+}
+
+.thesis h1 {
+  padding: 2rem 0 0 0;
+  text-align: center;
+  margin: 0;
+  color: hsl(0, 0%, 30%);
 }
 
 .thesis p {
@@ -270,7 +298,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: hsl(0, 0%, 75%);
+  color: hsl(0, 0%, 50%);
   margin: 1rem 1.5rem 4rem 1.5rem;
 }
 
