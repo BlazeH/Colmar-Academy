@@ -38,6 +38,10 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: inherit;
+}
+
 .colmar {
   font-family: Ubuntu;
   font-weight: bold;
@@ -130,11 +134,17 @@ a {
 
 .banner1 .right .button {
   color: white;
-  background-color: hsl( 0, 0%, 30%);
+  background-color: hsl(0, 0%, 30%);
   text-align: center;
   padding: 0.5rem 0;
   margin: 1.5rem 0;
+  transition: all 0.25s ease 0s;
 }
+
+  .banner1 .right .button:hover {
+    background-color: hsl(200, 80%, 60%);
+    font-size: 1.2rem;
+  }
 
 @media only screen and (max-width: 875px){
   .banner1 {
@@ -321,9 +331,21 @@ h3 {
   width: 26.875rem;
 }
 
+.photo {
+  max-width: 100%;
+  height: 13.75rem;
+  overflow: hidden;
+}
+
 .feature img{
+  max-width: 100%;
   height: 13.75rem;
   margin-bottom: 0.5rem;
+  transition: all 0.25s linear 0s;
+}
+
+.feature img:hover {
+  transform: scale(1.1);
 }
 
 .feature h2 {
@@ -336,6 +358,10 @@ h3 {
 }
 
 @media only screen and (max-width: 875px){
+
+  .photo {
+    display: none;
+  }
 
   .features {
     background-color: white;
